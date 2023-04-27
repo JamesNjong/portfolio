@@ -1,0 +1,160 @@
+@import url("./fontFaces.scss");
+
+// 1. Fonts 
+$calibre-bold: "CalibreBold",
+    sans-serif;
+$calibre-semibold : 'CalibreSemiBold',
+sans-serif;
+$calibre-medium: 'CalibreMedium',
+    sans-serif;
+$calibre-regular: 'CalibreRegular' sans-serif;
+$calibre-light: 'CalibreLight',
+    sans-serif;
+$sfmono-light : "SFMONOLight",
+sans-serif;
+$sfmono-regular: 'SFMONORegular',
+    sans-serif;
+$sfmono-medium: 'SFMONOMedium',
+    sans-serif;
+
+// 2. Colors
+
+$color-primary: #E6AC7D;
+$color-primary-dark: #2C314B;
+$color-primary-light: #404462;
+
+$color-accent: #646C93;
+
+$color-dark: #161D2E;
+$color-light: #F5F5F5;
+
+
+
+
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    //phone size -> 320px — 480px: Mobile devices.
+// 3. Buttons
+
+    .buttonPrimary {
+        background: none;
+        border: 1px solid $color-primary;
+        color: $color-primary;
+        border-radius: 6px;
+        min-height: 40px;
+        transition: all 0.5s ease-in-out;
+        font-family: $sfmono-light;
+
+        &:hover {
+            border-radius: 6px;
+            border: 5px solid $color-primary;
+        }
+    }
+
+    .buttonSecondary {
+        background: $color-accent;
+        border: none;
+        color: $color-primary;
+        border-radius: 6px;
+        transition: all 0.5s ease-in-out;
+        min-height: 40px;
+        font-family: $sfmono-light;
+
+        &:hover {
+            border-radius: 6px;
+            border: 5px solid $color-primary;
+        }
+    }
+
+    // 4. Typography  (should be responsive . . .)
+
+    // 4.1 Size 
+    .heading-1 {
+        font-size: 80px;
+        font-family: $calibre-bold;
+        line-height: normal;
+    }
+
+    .heading-2 {
+        font-size: 40px;
+        font-family: $calibre-semibold;
+    }
+
+    .heading-3 {
+        font-size: 30px;
+        font-family: $calibre-semibold;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+
+//home
+    .home-page {
+        background-color: $color-dark;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .bucket-host {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            height: 100%;
+        }
+
+        .home-content-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 100% !important;
+            min-height: 100%;
+
+
+            .hcc-column-left {
+                width: 40%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                justify-content: center;
+            }
+
+
+            .line-space {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-right: 5%;
+
+                .line {
+                    height: 0.2px;
+                    width: 150px;
+                    border-left: 1px solid $color-light;
+                }
+            }
+
+            .hcc-column-right {
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                text-align: center;
+
+                p {
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@import url("./fontFaces.scss");
+.buttonPrimary {
+  background: none;
+  border: 1px solid #E6AC7D;
+  color: #E6AC7D;
+  border-radius: 6px;
+  min-height: 40px;
+  transition: all 0.5s ease-in-out;
+  font-family: "SFMONOLight", sans-serif;
+}
+.buttonPrimary:hover {
+  border-radius: 6px;
+  border: 5px solid #E6AC7D;
+}
+
+.buttonSecondary {
+  background: #646C93;
+  border: none;
+  color: #E6AC7D;
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+  min-height: 40px;
+  font-family: "SFMONOLight", sans-serif;
+}
+.buttonSecondary:hover {
+  border-radius: 6px;
+  border: 5px solid #E6AC7D;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .home-page {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page .bucket-host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+  }
+  .home-page .home-content-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    min-height: 100%;
+  }
+  .home-page .home-content-container .hcc-column-left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .home-page .home-content-container .line-space {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5%;
+  }
+  .home-page .home-content-container .line-space .line {
+    height: 0.2px;
+    width: 150px;
+    border-left: 1px solid #F5F5F5;
+  }
+  .home-page .home-content-container .hcc-column-right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-page .home-content-container .hcc-column-right p {
+    max-width: 80%;
+  }
+}/*# sourceMappingURL=medium.css.map */

@@ -1,26 +1,30 @@
-import logo from "./logo.svg";
-import Navbar from "./Components/NavBar";
+import logo from './logo.svg';
+import './App.css';
+import './Decor/Main.css' 
+import './Decor/medium.css'
+import './Decor/small.css'
 import "bootstrap/dist/css/bootstrap.css";
-import './sassfiles/style.css'
-import Header from "./Components/Header";
-import Services from "./Components/Services";
-import About from "./Components/Aboutme.jsx";
-import Experience from "./Components/Experience";
-import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import NavBar from './Komponents/NavBar';
+import Header from './Komponents/Header';
+import Services from './Komponents/Services';
+import AboutMe from './Komponents/AboutMe';
+import Background from './Komponents/Background';
+import Portfolio from './Komponents/Portfolio';
+import Contact from './Komponents/Contact';
+import Footer from './Komponents/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Header />
-      <Services />
-      <About />
-      <Experience /> 
-      <Projects />
-      <Contact />
-      <Footer/>
+     <NavBar/>
+     <Header/>
+     <Services/>
+     <AboutMe/>
+     <Background/>
+     <Portfolio/>
+     <Contact/>
+     <Footer/>
     </div>
   );
 }
