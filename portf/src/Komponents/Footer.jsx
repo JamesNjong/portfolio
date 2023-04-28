@@ -24,11 +24,7 @@ class Footer extends Component {
             <div className="foot-center">
               <p className="cta ">Everything you need and then some !</p>
               <div className="contact_socials">
-                <a
-                  href="https://www.linkedin.com/in/james-jr-njong/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="https://github.com/JamesNjong/" target="_blank">
                   {" "}
                   <img
                     src={github}
@@ -40,7 +36,6 @@ class Footer extends Component {
                 <a
                   href="https://www.linkedin.com/in/james-jr-njong/"
                   target="_blank"
-                  rel="noreferrer"
                 >
                   {" "}
                   <img
@@ -50,11 +45,7 @@ class Footer extends Component {
                     className="img-fluid social_icon m-2"
                   />{" "}
                 </a>
-                <a
-                  href="https://twitter.com/James_J_Njong"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="https://twitter.com/James_J_Njong" target="_blank">
                   {" "}
                   <img
                     src={twitter}
@@ -63,11 +54,7 @@ class Footer extends Component {
                     className="img-fluid social_icon m-2"
                   />{" "}
                 </a>
-                <a
-                  href="mailto:njongjames@outlook.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="mailto:njongjames@outlook.com" target="_blank">
                   {" "}
                   <img
                     src={outlook}
@@ -76,7 +63,12 @@ class Footer extends Component {
                     className="img-fluid social_icon m-2"
                   />{" "}
                 </a>
-                <a href="#" target="_blank" rel="noreferrer">
+                <a
+                  aria-label="Chat on WhatsApp"
+                  href="https://wa.me/+237674811226"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {" "}
                   <img
                     src={whatsapp}

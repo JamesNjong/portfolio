@@ -16,6 +16,7 @@ class Header extends Component {
                 <div className="line"></div>
               </div>
               <div className="hcc-column-right">
+                <small className="py-3">Hello there ! I'm the</small>
                 <h3 className="heading-3 text-color-primary">
                   Versatile Problem Solver{" "}
                 </h3>

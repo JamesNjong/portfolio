@@ -8,23 +8,23 @@ class Services extends Component {
   state = {
     features: [
       {
-        name: "Android",
-        text: "Build high performant cross platform mobile apps from a single codebase.",
+        name: "Native Mobile App",
+        text: "Lean on Java, Kotlin or Swift to craete intuitive native apps for Android and iOS that keep your users coming.",
         classname: "service-item-light shadow-sm",
       },
       {
-        name: "iOS",
-        text: "Craete intuitive native apps for Android and iOS that keep your users coming.",
+        name: "Hybrid Mobile App",
+        text: "Build high performant cross platform mobile apps from a single flutter or React Native codebase.",
         classname: "service-item-secondary shadow-lg",
       },
       {
-        name: "Flutter",
-        text: "Guarantee beauty for your people on the web with sturdily engineered frontends.",
+        name: "Frontend Web",
+        text: "Guarantee beauty for your people on the web with pixel perfect react and angular frontend applications.",
         classname: "service-item-light shadow-sm",
       },
       {
-        name: "Frontend Web",
-        text: "Step into the future with world class business intelligence and data analysis.",
+        name: "Backend Web",
+        text: "Build robust server side applications with Java or Python and ready to go REST APIs.",
         classname: "service-item-secondary shadow",
       },
     ],

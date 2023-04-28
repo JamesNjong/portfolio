@@ -55,7 +55,18 @@ $color-gradient:radial-gradient(circle, #161d2e, #181f32, #1a2236, #1c243a, #1e2
     border-radius: 6px;
     border: 5px solid $color-primary;
   }
+
+  a{
+    text-decoration: none;
+    color: $color-light;
+    &:hover{
+      text-decoration: none;
+      color: $color-light;
+    }
+  }
 }
+
+
 
 
 .buttonLink {
@@ -133,6 +144,18 @@ $color-gradient:radial-gradient(circle, #161d2e, #181f32, #1a2236, #1c243a, #1e2
       padding: 2rem auto; 
       font-family: $calibre-regular;
       color: $color-light;
+  }
+  p{
+    a {
+        text-decoration: none;
+        color: $color-primary;
+        font-family: $sfmono-medium;
+    
+        &:hover {
+          text-decoration: none;
+          color: $color-primary;
+        }
+      }
   }
 
   html,
@@ -493,6 +516,16 @@ $color-gradient:radial-gradient(circle, #161d2e, #181f32, #1a2236, #1c243a, #1e2
         flex-direction: column;
         justify-content: space-between;
 
+            a {
+                text-decoration: none;
+                color: $color-light;
+            
+                &:hover {
+                  text-decoration: none;
+                  color: $color-light;
+                }
+              }
+
         .pcc-body_item-description{
           height: 80px;
           max-height: 80px;
@@ -661,5 +694,27 @@ $color-gradient:radial-gradient(circle, #161d2e, #181f32, #1a2236, #1c243a, #1e2
       align-items: center;
       justify-content: center;
     }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//key frames
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

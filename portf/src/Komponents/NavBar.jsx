@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "../Iconography/logo_perso.svg";
 import drawer from "../Iconography/drawerIcon.svg";
+import cv from "../Docs/James_J_Njong_CV.pdf";
 
 class NavBar extends Component {
   state = {
@@ -51,7 +52,7 @@ class NavBar extends Component {
                 </span>
               </button>
               <div
-                className="offcanvas offcanvas-end "
+                className="offcanvas offcanvas-end text-bg-dark"
                 tabindex="-1"
                 id="offcanvasNavbar2"
                 aria-labelledby="offcanvasNavbar2Label"
@@ -68,7 +69,7 @@ class NavBar extends Component {
                   ></button>
                 </div>
                 <div className="offcanvas-body">
-                  <ul className="navbar-nav justify-content-md-end align-items-md-end flex-grow-1 pe-3">
+                  <ul className="navbar-nav justify-content-md-end align-items-md-end  flex-grow-1 pe-3">
                     {this.state.menuItems.map((item, index) => (
                       <li className="nav-item">
                         <a
@@ -83,11 +84,15 @@ class NavBar extends Component {
                         </a>
                       </li>
                     ))}
+                    <button
+                      type="button"
+                      className="btn-resume buttonSecondary mx-4  px-4"
+                    >
+                      <a href={cv} download>
+                        Get Resume
+                      </a>
+                    </button>
                   </ul>
-
-                  <button type="button" className=" buttonSecondary mx-4  px-4">
-                    Get Resume
-                  </button>
                 </div>
               </div>
             </div>

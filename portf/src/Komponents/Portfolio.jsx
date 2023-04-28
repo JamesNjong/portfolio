@@ -13,33 +13,45 @@ class Portfolio extends Component {
     projects: [
       {
         name: "Zeword",
-        tools: ["Kotlin", "SwiftUi", "React"],
-        desc: "Fully offline Catholic bible for mobile and web built with Kotlin, SwiftUi and React.",
+        tools: ["Kotlin", "SwiftUi", "JSON"],
+        desc: "Fully offline Catholic bible for mobile and web built with Kotlin, and SwiftUi.",
+        progress: "70% Complete",
+        link: "https://github.com/JamesNjong/Zeword",
       },
       {
         name: "Nkolo",
         tools: ["Java", "SwiftUi", "React"],
         desc: "Personal finance native android and iOS app for local users built with Java, Swift and Firebase.",
+        progress: "30% Complete",
+        link: "https://github.com/JamesNjong/Nkolo",
       },
       {
         name: "Njakiri",
-        tools: ["Flutter", "Firebase", "Dart"],
+        tools: ["Java", "Firebase", "Swift"],
         desc: "Njakiri is a prototyped booking agency application built for mobile and web with Flutter.",
+        progress: "10% Complete",
+        link: "https://github.com/JamesNjong/Njakiri",
       },
       {
         name: "Tango",
-        tools: ["Java", "SwiftUi", "Firebase"],
-        desc: "Private messaging platform built on firebase for mobile and web with react, java and swift.",
+        tools: ["Flutter", "Dart", "Firebase"],
+        desc: "Private messaging platform built on firebase for mobile Android and iOS user with flutter.",
+        progress: "In Design",
+        link: "https://github.com/JamesNjong/Tango",
       },
       {
         name: "Stride",
-        tools: ["Compose", "Swift", "Firebase"],
-        desc: "Stride is a native mobile note taker application built for android and iOS.",
+        tools: ["Java", "Swift", "Angular"],
+        desc: "Stride helps you collect data offline and export it as a csv to your offline folder.",
+        progress: "10% Complete",
+        link: "https://github.com/JamesNjong/Stride",
       },
       {
         name: "Scryb",
-        tools: ["Java", "Swift", "Firebase"],
+        tools: ["Kotlin", "Swift", "Firebase"],
         desc: "Scrybe is a custom note taker for android and iOS, built with Java, swift and firebase.",
+        progress: "10% Complete",
+        link: "https://github.com/JamesNjong/Tango",
       },
     ],
   };
@@ -57,26 +69,42 @@ class Portfolio extends Component {
             <div className="pcc-body py-4">
               {this.state.projects.map((item, key) => (
                 <div className="pcc-body_item ">
-                  <img
-                    src={folder}
-                    alt="folder"
-                    width={60}
-                    height={60}
-                    className="img-fluid pcc-body_item-image py-4"
-                  />
-                  <p className="pcc-body_item-title heading-4">
-                    {item.name}{" "}
-                    <a href="" className="px-4">
-                      <img
-                        width={20}
-                        height={20}
-                        alt="go to github"
-                        src={viewon}
-                      />
+                  <div className="pcc-body_item_head">
+                    <img
+                      src={folder}
+                      alt="folder"
+                      width={40}
+                      height={40}
+                      className="img-fluid pcc-body_item-image py-4"
+                    />
+
+                    <div className="pcc-body_item-head_right">
+                      <small className="small-test text-color-primary">
+                        {item.progress}
+                      </small>
+                      <a href={item.link} className="px-4" target="_blank">
+                        <img
+                          width={20}
+                          height={20}
+                          alt="go to github"
+                          src={viewon}
+                        />
+                      </a>{" "}
+                    </div>
+                  </div>
+                  <p className="pcc-body_item-title heading-2">
+                    {" "}
+                    <a href={item.link} target="_blank">
+                      {item.name}{" "}
                     </a>{" "}
                   </p>
 
-                  <p className="pcc-body_item-description ">{item.desc}</p>
+                  <p className="pcc-body_item-description ">
+                    {" "}
+                    <a href={item.link} target="_blank">
+                      {item.desc}
+                    </a>{" "}
+                  </p>
 
                   <div className="pcc-body_item-tools">
                     {item.tools.map((itemz, index) => (

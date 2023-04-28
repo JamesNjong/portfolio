@@ -26,6 +26,14 @@
   border-radius: 6px;
   border: 5px solid #E6AC7D;
 }
+.buttonSecondary a {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+.buttonSecondary a:hover {
+  text-decoration: none;
+  color: #F5F5F5;
+}
 
 .buttonLink {
   text-decoration: none;
@@ -82,6 +90,16 @@
   padding: 2rem auto;
   font-family: "CalibreRegular" sans-serif;
   color: #F5F5F5;
+}
+
+p a {
+  text-decoration: none;
+  color: #E6AC7D;
+  font-family: "SFMONOMedium", sans-serif;
+}
+p a:hover {
+  text-decoration: none;
+  color: #E6AC7D;
 }
 
 html,
@@ -382,6 +400,14 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.portfolio-page .portfolio-content-container .pcc-body .pcc-body_item a {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+.portfolio-page .portfolio-content-container .pcc-body .pcc-body_item a:hover {
+  text-decoration: none;
+  color: #F5F5F5;
+}
 .portfolio-page .portfolio-content-container .pcc-body .pcc-body_item .pcc-body_item-description {
   height: 80px;
   max-height: 80px;
@@ -535,4 +561,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=Main.css.map */
