@@ -12,6 +12,13 @@ class Portfolio extends Component {
     heading: "Somethings on my plate",
     projects: [
       {
+        name: "Scryb",
+        tools: ["Java", "Python", "JS", "etc"],
+        desc: "A hundred litcode problems in a six languages. How i learn new concepts.",
+        progress: "10% Complete",
+        link: "https://github.com/JamesNjong/Scryb",
+      },
+      {
         name: "Zeword",
         tools: ["Kotlin", "SwiftUi", "JSON"],
         desc: "Fully offline Catholic bible for mobile and web built with Kotlin, and SwiftUi.",
@@ -45,13 +52,6 @@ class Portfolio extends Component {
         desc: "Stride helps you collect data offline and export it as a csv to your offline folder.",
         progress: "10% Complete",
         link: "https://github.com/JamesNjong/Stride",
-      },
-      {
-        name: "Scryb",
-        tools: ["Kotlin", "Swift", "Firebase"],
-        desc: "Scrybe is a custom note taker for android and iOS, built with Java, swift and firebase.",
-        progress: "10% Complete",
-        link: "https://github.com/JamesNjong/Tango",
       },
     ],
   };
